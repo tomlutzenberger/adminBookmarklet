@@ -1,3 +1,14 @@
+/*
+ *	adminBookmark v0.2
+ *	One-click bookmark for quick administration access independent from the domain
+ *
+ *	Copyright (c) 2015 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
+ *	https://github.com/tomlutzenberger/adminBookmark
+ * 
+ *	Released under the MIT license
+ *	https://github.com/tomlutzenberger/adminBookmark/LICENSE
+ */
+
 javascript: function extractDomain() {
 	
 	// Get the current url
