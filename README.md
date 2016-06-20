@@ -45,12 +45,12 @@ The script supports a lot.
   <dd>http://your.domain.com:8080</dd>
 </dl>
 
-## License ##
+## License
 
 This script is published under the **MIT License** and can be used for any commercial and personal projects.
 
 
-## Changelog ##
+## Changelog
 
-- 2016-06-21  v1.0  Second release with strict environment. Including some cleanup and linting
-- 2015-11-13  v0.2  First release
+ * 2016-06-21 [**v1.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v1.0) Second release with strict environment. Including some cleanup and linting
+ * 2015-11-13 [**v0.2**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v0.2) First release
