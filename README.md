@@ -26,21 +26,31 @@ You can use whatever path you like. This can be simply `/admin`, `/typo3` or som
 
 The script supports a lot.
 <dl>
-	<dt>Domains with a protocol</dt>
-	<dd>http://yourdomain.com</dd>
+  <dt>Domains with a protocol</dt>
+  <dd>http://yourdomain.com</dd>
 
-	<dt>Domains without protocol</dt>
-	<dd>yourdomain.com</dd>
+  <dt>Domains without protocol</dt>
+  <dd>yourdomain.com</dd>
 
-	<dt>Subdomains</dt>
-	<dd>http://your.domain.com</dd>
+  <dt>Subdomains</dt>
+  <dd>http://your.domain.com</dd>
 
-	<dt>It doesn't care about subpages or other paths</dt>
-	<dd>http://yourdomain.com/some-page</dd>
+  <dt>It doesn't care about subpages or other paths</dt>
+  <dd>http://yourdomain.com/some-page</dd>
 
-	<dt>Even IP's</dt>
-	<dd>192.168.1.1/path</dd>
+  <dt>Even IP's</dt>
+  <dd>192.168.1.1/path</dd>
 
-	<dt>And Ports (if the port is available)</dt>
-	<dd>http://your.domain.com:8080</dd>
+  <dt>And Ports (if the port is available)</dt>
+  <dd>http://your.domain.com:8080</dd>
 </dl>
+
+## License ##
+
+This script is published under the **MIT License** and can be used for any commercial and personal projects.
+
+
+## Changelog ##
+
+- 2016-06-21  v1.0  Second release with strict environment. Including some cleanup and linting
+- 2015-11-13  v0.2  First release

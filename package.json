@@ -1,0 +1,24 @@
+{
+  "name": "adminbookmark",
+  "version": "1.0.0",
+  "description": "Dynamic Bookmarklet to quickly access the backend of your tool",
+  "main": "adminBookmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomlutzenberger/adminBookmark.git"
+  },
+  "author": "Tom Lutzenberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomlutzenberger/adminBookmark/issues"
+  },
+  "homepage": "https://github.com/tomlutzenberger/adminBookmark#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
