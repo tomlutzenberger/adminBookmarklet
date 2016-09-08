@@ -1,4 +1,4 @@
-# adminBookmark
+# adminBookmark v2.0
 
 The adminBookmark was created to minimize the effort of a lazy web developer.
 
@@ -20,9 +20,24 @@ After creating a new bookmark in your browser, you can paste the minified script
 
 Now when you click on it, the domain of the website you're currently on, adds the defined admin path and open's it in a new window/tab.
 
-You can use whatever path you like. This can be simply `/admin`, `/typo3` or something else.
+Since v2.0 a couple of systems are detected automatically. If your system is not supported, you will be directed to the fallback, `/admin`.
 
-## What URL's are supported?
+**If so, please let me know, so I can add it.**
+
+
+## What systems are supported?
+
+* Drupal
+* Jimdo
+* Joomla!
+* Magento
+* Pimcore
+* Typo3
+* Weebly
+* Wordpress
+
+
+## What kind of URL's are supported?
 
 The script supports a lot.
 <dl>
@@ -52,5 +67,6 @@ This script is published under the **MIT License** and can be used for any comme
 
 ## Changelog
 
+ * 2016-09-08 [**v2.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.0) Added functionality to detect Systems/CMS itself
  * 2016-06-21 [**v1.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v1.0) Second release with strict environment. Including some cleanup and linting
  * 2015-11-13 [**v0.2**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v0.2) First release
