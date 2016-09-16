@@ -9,7 +9,6 @@ module.exports = function (grunt) {
 
     uglify: {
       options: {
-        banner: 'javascript:',
         quoteStyle: 1,
         screwIE8: true
       },
@@ -28,5 +27,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['uglify', 'jshint']);
+  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('lint', ['jshint']);
 };
