@@ -9,6 +9,7 @@ module.exports = function (grunt) {
 
     uglify: {
       options: {
+        banner: 'javascript:',
         quoteStyle: 1,
         screwIE8: true
       },
