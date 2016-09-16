@@ -17,14 +17,17 @@ javascript:
 
 
   var systems = {
+      'cloudrexx' : 'cadmin',
       'drupal' : 'user',
       'jimdo' : 'login',
       'joomla' : 'administrator',
       'magento' : 'admin',
       'pimcore' : 'admin',
+      'sefrengo' : 'backend',
       'typo3' : 'typo3',
       'weebly' : 'login',
-      'wordpress' : 'wp-admin'
+      'wordpress' : 'wp-admin',
+      'xt-commerce' : 'login.php'
     };
 
 
