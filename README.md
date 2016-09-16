@@ -1,4 +1,4 @@
-# adminBookmark v2.0
+# adminBookmark v2.1
 
 The adminBookmark was created to minimize the effort of a lazy web developer.
 
@@ -27,14 +27,17 @@ Since v2.0 a couple of systems are detected automatically. If your system is not
 
 ## What systems are supported?
 
+* Cloudrexx
 * Drupal
 * Jimdo
 * Joomla!
 * Magento
 * Pimcore
+* Sefrengo
 * Typo3
 * Weebly
 * Wordpress
+* XT-commerce
 
 
 ## What kind of URL's are supported?
@@ -67,6 +70,7 @@ This script is published under the **MIT License** and can be used for any comme
 
 ## Changelog
 
+ * 2016-09-16 [**v2.1**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.1) Added Cloudrexx, Sefrengo and XT-commerce
  * 2016-09-08 [**v2.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.0) Added functionality to detect Systems/CMS itself
  * 2016-06-21 [**v1.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v1.0) Second release with strict environment. Including some cleanup and linting
  * 2015-11-13 [**v0.2**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v0.2) First release

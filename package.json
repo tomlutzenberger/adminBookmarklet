@@ -1,6 +1,6 @@
 {
   "name": "adminbookmark",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Dynamic Bookmarklet to quickly access the backend of your tool",
   "main": "adminBookmark.js",
   "scripts": {

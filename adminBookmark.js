@@ -1,5 +1,5 @@
 /*
- * adminBookmark v2.0
+ * adminBookmark v2.1
  * One-click bookmarklet for quick administration access independent from the domain
  *
  * Copyright (c) 2016 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
