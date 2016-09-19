@@ -24,6 +24,8 @@ Since v2.0 a couple of systems are detected automatically. If your system is not
 
 **If so, please let me know, so I can add it.**
 
+**NOTE: In order to detect the system, it's name must be present in the `<head>` tag.**
+
 
 ## What systems are supported?
 
