@@ -2,7 +2,7 @@
 
 The adminBookmark was created to minimize the effort of a lazy web developer.
 
-Everytime i needed to login into the backend of a web project i had to do all the following steps:
+Everytime I needed to login into the backend of a website I had to do the following steps:
 
 1. Copy the frontend URL/Domain
 2. Open new tab
