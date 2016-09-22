@@ -1,6 +1,6 @@
 /*
- * adminBookmark v2.1
- * One-click bookmarklet for quick administration access independent from the domain
+ * adminBookmark v2.2
+ * Dynamic Bookmarklet to quickly access the backend of your tool
  *
  * Copyright (c) 2016 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
  * https://github.com/tomlutzenberger/adminBookmark
