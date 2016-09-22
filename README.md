@@ -1,4 +1,4 @@
-# adminBookmark v2.1
+# adminBookmark v2.2
 
 The adminBookmark was created to minimize the effort of a lazy web developer.
 
@@ -65,6 +65,7 @@ The script supports a lot.
   <dd>http://your.domain.com:8080</dd>
 </dl>
 
+
 ## License
 
 This script is published under the **MIT License** and can be used for any commercial and personal projects.
@@ -72,6 +73,7 @@ This script is published under the **MIT License** and can be used for any comme
 
 ## Changelog
 
+ * 2016-09-22 [**v2.2**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.2) Some minor tweaks and switching to native domain extraction
  * 2016-09-16 [**v2.1**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.1) Added Cloudrexx, Sefrengo and XT-commerce
  * 2016-09-08 [**v2.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.0) Added functionality to detect Systems/CMS itself
  * 2016-06-21 [**v1.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v1.0) Second release with strict environment. Including some cleanup and linting
