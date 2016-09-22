@@ -9,12 +9,11 @@
  * https://github.com/tomlutzenberger/adminBookmark/LICENSE
  */
 
-javascript:
+/*globals document,window*/
+
 (function () {
 
   'use strict';
-  /*globals document,window*/
-
 
   var systems = {
       'cloudrexx' : 'cadmin',
@@ -55,7 +54,7 @@ javascript:
 
   function parseHead() {
     /* Select the content of <head>, strip all whitespaces and return */
-    var head = document.getElementsByTagName("head")[0].innerHTML;
+    var head = document.getElementsByTagName('head')[0].innerHTML;
 
     return head.replace(/\s/g, '');
   }
@@ -89,7 +88,7 @@ javascript:
       }
     }
 
-    /* If no match, return 'admin' as fallback */
+    /* If there's no match, return 'admin' as fallback */
     return 'admin';
   }
 
@@ -98,4 +97,4 @@ javascript:
   // Open a new window/tab with extracted domain + your admin string
   window.open('//' + extractDomain() + '/' + getAdminPath(), '_blank');
 
-})();
+}());
