@@ -1,11 +1,11 @@
 # adminBookmark
 
-[![GitHub release](https://img.shields.io/github/release/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/releases)
-[![license](https://img.shields.io/github/license/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/blob/master/LICENSE)
-[![David](https://img.shields.io/david/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
-[![David DEV](https://img.shields.io/david/dev/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
+[![Releases](https://img.shields.io/github/release/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/releases)
+[![License](https://img.shields.io/github/license/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/blob/master/LICENSE)
+![David](https://img.shields.io/david/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)
+![David DEV](https://img.shields.io/david/dev/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
-[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%99%A5-red.svg)]()
+![Made with Love](https://img.shields.io/badge/Made%20with-%E2%99%A5-red.svg)
 
 
 ## Why adminBookmark?
