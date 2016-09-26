@@ -1,4 +1,13 @@
-# adminBookmark v2.2
+# adminBookmark
+
+[![GitHub release](https://img.shields.io/github/release/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/releases)
+[![license](https://img.shields.io/github/license/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)](https://github.com/tomlutzenberger/adminBookmark/blob/master/LICENSE)
+[![David](https://img.shields.io/david/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
+[![David DEV](https://img.shields.io/david/dev/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
+
+
+## Why adminBookmark?
 
 The adminBookmark was created to minimize the effort of a lazy web developer.
 
@@ -11,7 +20,6 @@ Everytime I needed to login into the backend of a website I had to do the follow
 
 
 I was tired of doing this a million times each day.
-**So here's the result.**
 
 
 ## How does it work?
