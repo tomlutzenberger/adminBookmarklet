@@ -75,6 +75,24 @@ The script supports almost any kind of URL.
 </dl>
 
 
+## Browser support
+
+![Browser Support IE8](https://img.shields.io/badge/IE_8-passing-brightgreen.svg)
+![Browser Support IE9](https://img.shields.io/badge/IE_9-passing-brightgreen.svg)
+![Browser Support IE10](https://img.shields.io/badge/IE_10-passing-brightgreen.svg)
+![Browser Support IE11](https://img.shields.io/badge/IE_11-passing-brightgreen.svg)
+![Browser Support Edge](https://img.shields.io/badge/Edge-failing-red.svg)
+
+![Browser Support Firefox 47+](https://img.shields.io/badge/Firefox_47+-error-yellow.svg)
+![Browser Support Firefox 50](https://img.shields.io/badge/Firefox_50+-passing-brightgreen.svg)
+
+![Browser Support Chrome 45+](https://img.shields.io/badge/Chrome_45+-passing-brightgreen.svg)
+
+![Browser Support Opera](https://img.shields.io/badge/Opera_40+-passing-brightgreen.svg)
+
+![Browser Support Vivaldi 1.2.490](https://img.shields.io/badge/Vivaldi_1.2+-error-yellow.svg)
+
+
 ## License
 
 This script is published under the **MIT License** and can be used for any commercial and personal projects.
