@@ -5,6 +5,7 @@
 [![David](https://img.shields.io/david/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
 [![David DEV](https://img.shields.io/david/dev/tomlutzenberger/adminBookmark.svg?maxAge=2592000?style=flat-square)]()
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
+[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%99%A5-red.svg)]()
 
 
 ## Why adminBookmark?
@@ -24,15 +25,15 @@ I was tired of doing this a million times each day.
 
 ## How does it work?
 
-After creating a new bookmark in your browser, you can paste the minified script into the url field.
+After creating a new bookmark in your browser, you can paste the **[minified script](https://github.com/tomlutzenberger/adminBookmark/blob/master/adminBookmark.min.js)** into the url field.
 
-Now when you click on it, the domain of the website you're currently on, adds the defined admin path and open's it in a new window/tab.
+Now when you click on it, the script adds the admin path to the current website's domain and opens it in a new window/tab.
 
-Since v2.0 a couple of systems are detected automatically. If your system is not supported, you will be directed to the fallback, `/admin`.
+Since [v2.0](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.0) a couple of systems are detected automatically.
 
-**If so, please let me know, so I can add it.**
+If your system is not supported, you will be directed to the fallback, `/admin`. (Please let me know, so I can add it)
 
-**NOTE: In order to detect the system, it's name must be present in the `<head>` tag.**
+**NOTE: In order to detect the system, its name must be present in the `<head>` tag.**
 
 
 ## What systems are supported?
@@ -50,11 +51,11 @@ Since v2.0 a couple of systems are detected automatically. If your system is not
 * XT-commerce
 
 
-## What kind of URL's are supported?
+## URL support
 
-The script supports a lot.
+The script supports almost any kind of URL.
 <dl>
-  <dt>Domains with a protocol</dt>
+  <dt>Domains with protocol</dt>
   <dd>http://yourdomain.com</dd>
 
   <dt>Domains without protocol</dt>
@@ -69,7 +70,7 @@ The script supports a lot.
   <dt>Even IP's</dt>
   <dd>192.168.1.1/path</dd>
 
-  <dt>And Ports (if the port is available)</dt>
+  <dt>And Ports (if available)</dt>
   <dd>http://your.domain.com:8080</dd>
 </dl>
 
