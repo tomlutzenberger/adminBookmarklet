@@ -19,15 +19,31 @@ module.exports = function (grunt) {
         }
       }
     },
+
     jshint: {
       all: ['Gruntfile.js', 'adminBookmark.js']
+    },
+
+    pug: {
+      release: {
+        options: {
+          pretty: true,
+          data: {
+            debug: false
+          }
+        },
+        files: {
+          'docs/index.html': 'docs/index.pug'
+        }
+      }
     }
   });
 
   // load and register tasks
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-pug');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'pug']);
   grunt.registerTask('lint', ['jshint']);
 };
