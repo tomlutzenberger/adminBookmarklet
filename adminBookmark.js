@@ -1,5 +1,5 @@
 /*
- * adminBookmark v2.2
+ * adminBookmark v2.4
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
  * Copyright (c) 2016 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
