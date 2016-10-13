@@ -100,6 +100,7 @@ This script is published under the **MIT License** and can be used for any comme
 
 ## Changelog
 
+ * 2016-10-13 [**v2.4**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.2) Adding Github page
  * 2016-09-22 [**v2.2**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.2) Some minor tweaks and switching to native domain extraction
  * 2016-09-16 [**v2.1**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.1) Added Cloudrexx, Sefrengo and XT-commerce
  * 2016-09-08 [**v2.0**](https://github.com/tomlutzenberger/adminBookmark/releases/tag/v2.0) Added functionality to detect Systems/CMS itself
