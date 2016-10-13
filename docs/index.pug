@@ -1,0 +1,37 @@
+
+//- Markup
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    title= 'adminBookmark v2.4'
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+  body
+
+    div.container
+      h1.text-center
+        | adminBookmark v2.4
+
+      div.jumbotron.text-center
+        p.lead
+          | Access your systems login with only 1 click.
+          br
+          | For further information, see the <a href="https://github.com/tomlutzenberger/adminBookmark" target="_blank">README</a> file.
+        p
+          | Click the button below or drag it to your bookmark bar.
+        p
+          | <a class="btn btn-lg btn-primary" target="_blank" role="button" href="
+          include ../adminBookmark.min.js
+          | ">🛠 admin</a>
+
+
+      footer.navbar.navbar-default
+        .row
+          .col-xs-12.text-center
+            != 'Made with &#x2764;'
+            br
+            != '&copy; 2016 by '
+            a(href='https://tomlutzenberger.de' target='_blank') Tom Lutzenberger
