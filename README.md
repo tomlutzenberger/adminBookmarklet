@@ -77,20 +77,26 @@ The script supports almost any kind of URL.
 
 ## Browser support
 
-![Browser Support IE8](https://img.shields.io/badge/IE_8-passing-brightgreen.svg)
-![Browser Support IE9](https://img.shields.io/badge/IE_9-passing-brightgreen.svg)
-![Browser Support IE10](https://img.shields.io/badge/IE_10-passing-brightgreen.svg)
-![Browser Support IE11](https://img.shields.io/badge/IE_11-passing-brightgreen.svg)
-![Browser Support Edge](https://img.shields.io/badge/Edge-failing-red.svg)
+![Browser Support IE8: passing](https://img.shields.io/badge/IE_8-passing-brightgreen.svg)
+![Browser Support IE9: passing](https://img.shields.io/badge/IE_9-passing-brightgreen.svg)
+![Browser Support IE10: passing](https://img.shields.io/badge/IE_10-passing-brightgreen.svg)
+![Browser Support IE11: passing](https://img.shields.io/badge/IE_11-passing-brightgreen.svg)
+![Browser Support Edge: failing](https://img.shields.io/badge/Edge-failing-red.svg)
 
-![Browser Support Firefox 47+](https://img.shields.io/badge/Firefox_47+-error-yellow.svg)
-![Browser Support Firefox 50](https://img.shields.io/badge/Firefox_50+-passing-brightgreen.svg)
+![Browser Support Firefox 47+: passing with issues](https://img.shields.io/badge/Firefox_47+-passing_with_issues-blue.svg)
+![Browser Support Firefox 50: passing](https://img.shields.io/badge/Firefox_50+-passing-brightgreen.svg)
 
-![Browser Support Chrome 45+](https://img.shields.io/badge/Chrome_45+-passing-brightgreen.svg)
+![Browser Support Chrome 45+: passing](https://img.shields.io/badge/Chrome_45+-passing-brightgreen.svg)
 
-![Browser Support Opera](https://img.shields.io/badge/Opera_40+-passing-brightgreen.svg)
+![Browser Support Oper: passinga](https://img.shields.io/badge/Opera_40+-passing-brightgreen.svg)
 
-![Browser Support Vivaldi 1.2.490](https://img.shields.io/badge/Vivaldi_1.2+-error-yellow.svg)
+![Browser Support Vivaldi 1.2+: passing with issues](https://img.shields.io/badge/Vivaldi_1.2+-passing_with_issues-blue.svg)
+
+
+## Browser Issues
+
+ * Both **Vivaldi** and **Firefox < 50** keep the Javascript in the URL bar after clicking the bookmarklet
+ * **Edge** is untestable due to the fact that it won't let you edit bookmarks and is therefore failing. See [**Microsoft Answers:** Edit bookmarks in Microsoft Edge](http://answers.microsoft.com/en-us/windows/forum/windows_10-networking/edit-bookmarks-in-microsoft-edge/d5e4d187-3247-4e11-9869-e56e4dcb2af7)
 
 
 ## License
