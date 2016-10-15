@@ -1,5 +1,5 @@
 /*
- * adminBookmark v2.4
+ * adminBookmark v2.6
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
  * Copyright (c) 2016 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
@@ -74,6 +74,6 @@
 
 
   // Open a new window/tab with domain + detected admin string
-  window.open('//' + window.location.hostname + '/' + getAdminPath(), '_blank');
+  window.open(window.location.protocol + '//' + window.location.host + '/' + getAdminPath(), '_blank');
 
 }());
