@@ -7,6 +7,7 @@
  *
  * Released under the MIT license
  * https://github.com/tomlutzenberger/adminBookmark/LICENSE
+ * https://tomlutzenberger.github.io/adminBookmark/
  */
 
 /*globals document,window*/
