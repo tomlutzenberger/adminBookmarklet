@@ -16,7 +16,9 @@
 
   'use strict';
 
-  var systems = {
+  var
+    adminUrl = window.location.protocol + '//' + window.location.host + '/',
+    systems = {
       'cloudrexx' : 'cadmin',
       'drupal' : 'user',
       'jimdo' : 'login',
@@ -74,7 +76,7 @@
 
 
 
-  // Open a new window/tab with domain + detected admin string
-  window.open(window.location.protocol + '//' + window.location.host + '/' + getAdminPath(), '_blank');
+  /* Open a new window/tab with domain + detected admin string */
+  window.open(adminUrl + getAdminPath(), '_blank');
 
 }());
