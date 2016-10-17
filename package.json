@@ -1,6 +1,6 @@
 {
   "name": "adminbookmark",
-  "version": "2.4.0",
+  "version": "2.6.0",
   "description": "Dynamic Bookmarklet to quickly access the backend of your tool",
   "main": "adminBookmark.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/tomlutzenberger/adminBookmark/issues"
   },
-  "homepage": "https://github.com/tomlutzenberger/adminBookmark#readme",
+  "homepage": "https://tomlutzenberger.github.io/adminBookmark/",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
