@@ -10,13 +10,14 @@
  * https://tomlutzenberger.github.io/adminBookmark/
  */
 
-/*globals document,window*/
+/*globals document,window,console,XMLHttpRequest*/
 
 (function () {
 
   'use strict';
 
   var
+    app = 'adminBookmark',
     adminUrl = window.location.protocol + '//' + window.location.host + '/',
     systems = {
       'cloudrexx' : 'cadmin',
@@ -52,6 +53,39 @@
 
 
 
+  function ping(url) {
+    var
+      success = false,
+      xhr = new XMLHttpRequest();
+
+    try {
+      xhr.open('GET', url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+
+          /* Check if a redirect happened */
+          if (xhr.responseURL === url) {
+            success = true;
+          } else {
+            console.warn(app + ': Redirect detected');
+          }
+        } else {
+          console.warn(app + ': Received status ' + xhr.status);
+        }
+      };
+
+      xhr.send();
+
+    } catch (e) {
+      console.error(app + ': ' + e);
+    }
+
+    return success;
+  }
+
+
+
   function getAdminPath() {
     var
       systemName = '',
@@ -65,7 +99,11 @@
 
         /* Check the head for an occurance of the name and return the admin path on success */
         if (checkForSystem(headContent, systemName)) {
-          return systems[systemName];
+
+          /* Ping full url to check availability */
+          if (ping(adminUrl + systems[systemName])) {
+            return systems[systemName];
+          }
         }
       }
     }
