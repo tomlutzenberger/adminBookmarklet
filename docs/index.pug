@@ -9,13 +9,17 @@ html(lang="en")
 
     title= 'adminBookmark v2.6'
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+    style
+      != '.btn-facebook{background:#3b5998; color: #fff;}'
+      != '.btn-twitter{background:#1da1f2; color: #fff;}'
   body
 
-    div.container
-      h1.text-center
+
+    div.container.text-center
+      h1
         | adminBookmark v2.6
 
-      div.jumbotron.text-center
+      div.jumbotron
         p.lead
           | Access your systems login with only 1 click.
           br
@@ -28,6 +32,18 @@ html(lang="en")
           | ">🛠 admin</a>
 
 
+      h2.h3 Share
+      p
+        a.btn.btn-sm.btn-facebook(href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmark%2F' target='_blank')
+          i.fa.fa-fw.fa-facebook
+          != '&nbsp;Share'
+
+        != '&nbsp;'
+
+        a.btn.btn-sm.btn-twitter(href='https://twitter.com/share?text=adminBookmark%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&url=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmark%2F&via=t0mlutzenberger&hashtags=javascript%2Cbookmarklet' target='_blank')
+          i.fa.fa-fw.fa-twitter
+          != '&nbsp;Tweet'
+
       footer.navbar.navbar-default
         .row
           .col-xs-12.text-center
@@ -35,3 +51,5 @@ html(lang="en")
             br
             != '&copy; 2016 by '
             a(href='https://tomlutzenberger.de' target='_blank') Tom Lutzenberger
+
+    script(src='https://use.fontawesome.com/0a3e84e616.js')
