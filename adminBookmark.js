@@ -1,8 +1,8 @@
 /*
- * adminBookmark v2.6
+ * adminBookmark v2.8
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
- * Copyright (c) 2016 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
+ * Copyright (c) 2017 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
  * https://github.com/tomlutzenberger/adminBookmark
  *
  * Released under the MIT license
@@ -16,19 +16,19 @@
 
   'use strict';
 
-  var systems = {
-      'cloudrexx' : 'cadmin',
-      'drupal' : 'user',
-      'jimdo' : 'login',
-      'joomla' : 'administrator',
-      'magento' : 'admin',
-      'pimcore' : 'admin',
-      'sefrengo' : 'backend',
-      'typo3' : 'typo3',
-      'weebly' : 'login',
-      'wordpress' : 'wp-admin',
-      'xt-commerce' : 'login.php'
-    };
+  var systems = [
+    { name: 'cloudrexx',   path : 'cadmin'        },
+    { name: 'drupal',      path : 'user'          },
+    { name: 'jimdo',       path : 'login'         },
+    { name: 'joomla',      path : 'administrator' },
+    { name: 'magento',     path : 'admin'         },
+    { name: 'pimcore',     path : 'admin'         },
+    { name: 'sefrengo',    path : 'backend'       },
+    { name: 'typo3',       path : 'typo3'         },
+    { name: 'weebly',      path : 'login'         },
+    { name: 'wordpress',   path : 'wp-admin'      },
+    { name: 'xt-commerce', path : 'login.php'     }
+  ];
 
 
 
@@ -41,35 +41,18 @@
 
 
 
-  function checkForSystem(headContent, name) {
-    /* Test 'headContent' for the string in 'name' (case-insensitive + multiline mode) */
-    var pattern = new RegExp(name, 'im');
-
-    return pattern.test(headContent);
-  }
-
-
-
   function getAdminPath() {
     var
-      systemName = '',
+      system = [],
       headContent = parseHead();
 
-    /* Loop through all systems */
-    for (systemName in systems) {
+    system = systems.filter(function (systemObj) {
+      var pattern = new RegExp(systemObj.name, 'im');
 
-      /* Only check if the given object has its own property */
-      if (systems.hasOwnProperty(systemName)) {
+      return pattern.test(headContent);
+    });
 
-        /* Check the head for an occurance of the name and return the admin path on success */
-        if (checkForSystem(headContent, systemName)) {
-          return systems[systemName];
-        }
-      }
-    }
-
-    /* If there's no match, return 'admin' as fallback */
-    return 'admin';
+    return system.length > 0 ? system[0].path : 'admin';
   }
 
 
