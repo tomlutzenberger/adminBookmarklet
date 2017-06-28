@@ -1,11 +1,11 @@
 {
-  "name": "adminbookmark",
+  "name": "adminbookmarklet",
   "version": "2.8.0",
   "description": "Dynamic Bookmarklet to quickly access the backend of your tool",
-  "main": "adminBookmark.js",
+  "main": "adminBookmarklet.js",
   "scripts": {
-    "uglify:minify": "uglifyjs adminBookmark.js -o adminBookmark.min.js -c sequences=true -c dead_code=true -c conditionals=true -c booleans=true -c unused=true -c if_return=true -c join_vars=true -c drop_console=true -m -r --screw-ie8 -b beautify=false -b quote_style=1",
-    "uglify:prepend": "prepend adminBookmark.min.js 'javascript:'",
+    "uglify:minify": "uglifyjs adminBookmarklet.js -o adminBookmarklet.min.js -c sequences=true -c dead_code=true -c conditionals=true -c booleans=true -c unused=true -c if_return=true -c join_vars=true -c drop_console=true -m -r --screw-ie8 -b beautify=false -b quote_style=1",
+    "uglify:prepend": "prepend adminBookmarklet.min.js 'javascript:'",
     "uglify": "yarn run uglify:minify && yarn run uglify:prepend",
     "pug:compile": "pug docs/index.pug",
     "pug:watch": "pug --out docs/index.pug --watch",
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomlutzenberger/adminBookmark.git"
+    "url": "git+https://github.com/tomlutzenberger/adminBookmarklet.git"
   },
   "author": "Tom Lutzenberger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomlutzenberger/adminBookmark/issues"
+    "url": "https://github.com/tomlutzenberger/adminBookmarklet/issues"
   },
-  "homepage": "https://tomlutzenberger.github.io/adminBookmark/",
+  "homepage": "https://tomlutzenberger.github.io/adminBookmarklet/",
   "devDependencies": {
     "eslint": "^4.1.1",
     "eslint-config-standard": "^10.2.1",

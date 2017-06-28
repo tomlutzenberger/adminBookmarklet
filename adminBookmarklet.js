@@ -1,20 +1,20 @@
 /*
- * adminBookmark v2.8
+ * adminBookmarklet v2.8
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
  * Copyright (c) 2017 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
- * https://github.com/tomlutzenberger/adminBookmark
+ * https://github.com/tomlutzenberger/adminBookmarklet
  *
  * Released under the MIT license
- * https://github.com/tomlutzenberger/adminBookmark/LICENSE
- * https://tomlutzenberger.github.io/adminBookmark/
+ * https://github.com/tomlutzenberger/adminBookmarklet/LICENSE
+ * https://tomlutzenberger.github.io/adminBookmarklet/
  */
 
 /*globals document,window*/
 /*jslint esnext:true */
 
 
-const adminBookmark = () => {
+const adminBookmarklet = () => {
 
     'use strict';
 
@@ -102,4 +102,4 @@ const adminBookmark = () => {
 };
 
 
-window.open(window.location.protocol + '//' + window.location.host + '/' + adminBookmark().getAdminPath(), '_blank');
+window.open(window.location.protocol + '//' + window.location.host + '/' + adminBookmarklet().getAdminPath(), '_blank');
