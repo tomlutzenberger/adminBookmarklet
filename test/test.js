@@ -1,5 +1,5 @@
 
-/*global global,window,require,describe,it,beforeEach,afterEach*/
+/*global global,window,require,describe,it*/
 /*jslint esnext:true */
 
 const assert = require('assert');
