@@ -11,8 +11,9 @@
     "pug:watch": "pug --out docs/index.pug --watch",
     "compile": "yarn run uglify && yarn run pug:compile",
     "lint:js": "eslint --config .eslintrc.json src;",
+    "lint:pug": "pug-lint --config .pug-lintrc docs/index.pug;",
     "lint:html": "htmlhint --config .htmlhintrc index.html;",
-    "lint": "yarn run lint:html && yarn run lint:js",
+    "lint": "yarn run lint:pug && yarn run lint:html && yarn run lint:js",
     "test:unit": "mocha --colors --sort --check-leaks --use_strict -r mock-browser",
     "test": "yarn run lint && yarn run test:unit",
     "build": "yarn run compile && yarn run test && yarn clean"
@@ -35,8 +36,8 @@
     "mock-browser": "^0.92.14",
     "prepend-file-cli": "^1.0.6",
     "pug-cli": "^1.0.0-alpha6",
+    "pug-lint": "^2.4.0",
     "rewire": "^2.5.2",
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   }
 }
-
