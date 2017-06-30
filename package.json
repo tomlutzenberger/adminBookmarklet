@@ -8,7 +8,7 @@
     "minify:wrap": "cat adminBookmarklet.min.js | wrap 'javascript:!(()=>{' '})();' > tmpfile && cat tmpfile > adminBookmarklet.min.js && rm tmpfile",
     "minify": "yarn run minify:compile && yarn run minify:wrap",
     "pug:compile": "pug docs/index.pug",
-    "pug:watch": "pug --out docs/index.pug --watch",
+    "pug:watch": "pug docs/index.pug --watch",
     "compile": "yarn run minify && yarn run pug:compile",
     "lint:js": "eslint --config .eslintrc.json src;",
     "lint:pug": "pug-lint --config .pug-lintrc docs/index.pug;",
