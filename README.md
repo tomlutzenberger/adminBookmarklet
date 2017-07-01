@@ -41,7 +41,8 @@ Since **[v2.0](https://github.com/tomlutzenberger/adminBookmarklet/releases/tag/
 
 The fallback `/admin` will be used if your system is not supported (Please let me know, so I can add it)
 
-**IMPORTANT NOTE: In order to detect the system, its name must be present in the `<head>` tag.**
+![IMPORTANT NOTE](https://img.shields.io/badge/!!!-Important_Note-red.svg?style=flat-square)\
+**In order to detect the system, its name must be present in the `<head>` tag.**
 
 ## What systems are supported?
 
