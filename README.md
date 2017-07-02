@@ -96,6 +96,7 @@ This script is published under the **MIT License** and can be used for any comme
 
 ## Changelog
 
+- 2017-07-02 [**v3.0**](https://github.com/tomlutzenberger/adminBookmarklet/releases/tag/v3.0) Completely rewritten code base using ES6, unit tests and redesigned docs page
 - 2017-02-21 [**v2.8**](https://github.com/tomlutzenberger/adminBookmarklet/releases/tag/v2.8) Improved system matching and added social share buttons to docs
 - 2016-10-15 [**v2.6**](https://github.com/tomlutzenberger/adminBookmarklet/releases/tag/v2.6) Fixed port and protocol handling
 - 2016-10-13 [**v2.4**](https://github.com/tomlutzenberger/adminBookmarklet/releases/tag/v2.4) Adding Github page

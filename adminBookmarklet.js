@@ -1,13 +1,13 @@
-/*
- * adminBookmarklet v2.8
+/*!
+ * adminBookmarklet v3.0
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
  * Copyright (c) 2017 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
  * https://github.com/tomlutzenberger/adminBookmarklet
- *
- * Released under the MIT license
- * https://github.com/tomlutzenberger/adminBookmarklet/LICENSE
  * https://tomlutzenberger.github.io/adminBookmarklet/
+ *
+ * @license: Licensed under the MIT license
+ * https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE
  */
 
 /*globals document,window*/
