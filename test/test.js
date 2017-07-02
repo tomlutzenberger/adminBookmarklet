@@ -14,6 +14,8 @@ global.document = window.document;
 const script = rewire('../adminBookmarklet.js');
 const adminBookmarklet = script.__get__('adminBookmarklet');
 
+const ZERO = 0;
+const FIRST = 0;
 
 describe('adminBookmarklet', () => {
 
@@ -23,7 +25,7 @@ describe('adminBookmarklet', () => {
         });
 
         it('should contain at least 1 element', () => {
-            assert.ok(adminBookmarklet().getSystems().length > 0);
+            assert.ok(adminBookmarklet().getSystems().length > ZERO);
         });
     });
 
@@ -44,7 +46,7 @@ describe('adminBookmarklet', () => {
             const meta = document.createElement('meta');
             meta.name = 'generator';
             meta.content = 'Wordpress';
-            document.getElementsByTagName('head')[0].appendChild(meta);
+            document.getElementsByTagName('head')[FIRST].appendChild(meta);
 
             assert.ok(adminBookmarklet().getAdminPath() === 'wp-admin');
         });
@@ -53,7 +55,7 @@ describe('adminBookmarklet', () => {
             const meta = document.createElement('meta');
             meta.name = 'generator';
             meta.content = 'TYPO3';
-            document.getElementsByTagName('head')[0].appendChild(meta);
+            document.getElementsByTagName('head')[FIRST].appendChild(meta);
 
             assert.ok(adminBookmarklet().getAdminPath() === 'typo3');
         });
