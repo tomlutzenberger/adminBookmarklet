@@ -8,7 +8,7 @@
   "doctype-html5": true,
   "id-class-value": "dash",
   "id-unique": true,
-  "inline-script-disabled": true,
+  "inline-script-disabled": false,
   "inline-style-disabled": true,
   "space-tab-mixed-disabled": "space",
   "spec-char-escape": true,

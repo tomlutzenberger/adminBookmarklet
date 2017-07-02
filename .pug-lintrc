@@ -2,7 +2,6 @@
   "disallowAttributeConcatenation": true,
   "disallowAttributeInterpolation": true,
   "disallowBlockExpansion": true,
-  "disallowClassAttributeWithStaticValue": true,
   "disallowClassLiteralsBeforeIdLiterals": true,
   "disallowDuplicateAttributes": true,
   "disallowIdAttributeWithStaticValue": true,
