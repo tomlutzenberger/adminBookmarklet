@@ -1,0 +1,58 @@
+
+mixin metaBootstrap
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+mixin css(href)
+  link(href=href rel="stylesheet")
+
+mixin js(src)
+  script(src=src)
+
+mixin faIcon(icon)
+  if icon.type === 'stacked'
+    span.fa-stack&attributes(attributes)
+      each value, index in icon.icons
+        span.fa(class=`fa-stack-${(index - 2) * -1}x ${value}` aria-hidden="true")
+  else
+    span.fa(class=icon.icons[0] aria-hidden="true")&attributes(attributes)
+
+mixin aButton(label, title, url, icon)
+  a.btn(href=url title=title target="_blank")&attributes(attributes)
+    if icon
+      +faIcon(icon)
+    span.hidden-xs
+      | &nbsp;
+      = label
+  | &nbsp;
+
+mixin navbar(title, navbarTextAlign, navbarIcon)
+  .navbar&attributes(attributes)
+    .container
+      .navbar-header(class=navbarTextAlign !== '' ? `text-${navbarTextAlign}` : '')
+        a.navbar-brand(href="/" title=title)
+          +faIcon(navbarIcon)(class="app-icon")
+          | &nbsp;
+          = title
+
+mixin footer(socialButtons)
+  footer&attributes(attributes)
+    .container
+      .row
+        .col-xs-6.col-md-12.text-center
+          p
+            each social in socialButtons
+              +aButton(social.label, social.title, social.url, social.icon)(class=`btn-sm btn-${social.key}`)
+
+        .col-xs-6.col-md-12.text-center
+          p
+            | Made with&nbsp;
+            span.color-red
+              +faIcon({'type': 'single', 'icons': ['fa-fw fa-heart']})
+              span.sr-only
+                | ❤
+          p
+            | &copy; 2017 &ndash; A Project by&nbsp;
+            a(href="https://tomlutzenberger.de" title="Open tomlutzenberger.de" target="_blank")
+              | Tom Lutzenberger
