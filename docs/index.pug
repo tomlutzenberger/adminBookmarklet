@@ -1,49 +1,92 @@
-doctype html
+-
+  var title = 'adminBookmarklet v2.8'
+
+  var appIcon = {
+    'type' : 'stacked',
+    'icons': [
+      'fa-bookmark',
+      'fa-cogs fa-inverse fa-fix-align'
+    ]
+  }
+
+  var socialButtons = [
+    {
+      'key': 'facebook',
+      'label': 'Share',
+      'title': 'Share on Facebook',
+      'url': 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmarklet%2F',
+      'icon': {'type': 'single', 'icons': ['fa-fw fa-lg fa-facebook']}
+    },
+    {
+      'key': 'twitter',
+      'label': 'Tweet',
+      'title': 'Post a tweet',
+      'url': 'https://twitter.com/share?text=adminBookmarklet%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&url=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmarklet%2F&via=t0mlutzenberger&hashtags=javascript%2Cbookmarklet',
+      'icon': {'type': 'single', 'icons': ['fa-fw fa-lg fa-twitter']}
+    },
+    {
+      'key': 'github',
+      'label': 'Contribute',
+      'title': 'Contribute on GitHub',
+      'url': 'https://github.com/tomlutzenberger/adminbookmarklet',
+      'icon': {'type': 'single', 'icons': ['fa-fw fa-lg fa-github']}
+    },
+  ]
+
+  var systems = [
+    {'key': 'cloudrexx',   'title': 'Cloudrexx'},
+    {'key': 'drupal',      'title': 'Drupal'},
+    {'key': 'jimdo',       'title': 'Jimdo'},
+    {'key': 'joomla',      'title': 'Joomla!'},
+    {'key': 'magento',     'title': 'Magento'},
+    {'key': 'pimcore',     'title': 'Pimcore'},
+    {'key': 'sefrengo',    'title': 'Sefrengo'},
+    {'key': 'typo3',       'title': 'Typo3'},
+    {'key': 'weebly',      'title': 'Weebly'},
+    {'key': 'wordpress',   'title': 'Wordpress'},
+    {'key': 'xt-commerce', 'title': 'XT-commerce'},
+  ]
+
+include ./includes/mixins.pug
+
+doctype
 html(lang="en")
   head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+    +metaBootstrap
 
-    title= 'adminBookmarklet v2.8'
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
-    style
-      != '.btn-facebook{background:#3b5998; color: #fff;}'
-      != '.btn-twitter{background:#1da1f2; color: #fff;}'
+    title= title
+    +css("./dist/css/adminBookmarklet.min.css")
   body
 
-    .container.text-center
-      h1
-        | adminBookmarklet v2.8
+    +navbar(title, 'center', appIcon)(class="navbar-default navbar-fixed-top")
 
-      .jumbotron
-        p.lead Access your systems login with only 1 click.
-        p.
-          For further information, see the #[a(href="https://github.com/tomlutzenberger/adminBookmarklet" target="_blank" title="Open README") README] file.
-        p Click the button below or drag it to your bookmark bar.
-        p
-          | <a class="btn btn-lg btn-primary" target="_blank" role="button" title="Get adminBookmarklet" href="
-          include ../adminBookmarklet.min.js
-          | ">🛠 admin</a>
+    main.text-center
+      section
+        .container
+          .page-header
+            h1 Access your systems login with only 1 click.
+          .row
+            .col-xs-12.col-md-8.col-md-offset-2
+              p.lead adminBookmarklet is a dynamic bookmark written in pure JavaScript to quickly access the login page of your CMS or E-Commerce system.
+              p
+                strong Click the button below or drag it to your bookmark bar.
+              p
+                | <a class="btn btn-lg btn-primary" target="_blank" role="button" title="Get adminBookmarklet" href="
+                include ../adminBookmarklet.min.js
+                | ">
+                | <span class="sr-only">⚙🔖</span>
+                +faIcon(appIcon)(class="app-icon app-icon-inverse")
+                | adminBookmarklet</a>
+              p.
+                For further information, see the #[a(href="https://github.com/tomlutzenberger/adminBookmarklet" target="_blank" title="Open README") README] file on GitHub.
 
-      h2.h3 Share
-      p
-        a.btn.btn-sm.btn-facebook(href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmark%2F" target="_blank" title="Share on Facebook")
-          span.fa.fa-fw.fa-facebook
-          != '&nbsp;Share'
+      section
+        .container
+          .row
+            .col-xs-12.col-md-8.col-md-offset-2
+              h2 Supported systems
+              p.systems
+                each system in systems
+                  img(src=`https://raw.githubusercontent.com/tomlutzenberger/adminBookmarklet/master/assets/${system.key}.png` alt=system.title)
 
-        != '&nbsp;'
-
-        a.btn.btn-sm.btn-twitter(href="https://twitter.com/share?text=adminBookmarklet%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&url=https%3A%2F%2Ftomlutzenberger.github.io%2FadminBookmark%2F&via=t0mlutzenberger&hashtags=javascript%2Cbookmarklet" target="_blank" title="Share on Twitter")
-          span.fa.fa-fw.fa-twitter
-          != '&nbsp;Tweet'
-
-      footer.navbar.navbar-default
-        .row
-          .col-xs-12.text-center
-            != 'Made with &#x2764;'
-            br
-            != '&copy; 2017 by '
-            a(href="https://tomlutzenberger.de" target="_blank" title="Open tomlutzenberger.de") Tom Lutzenberger
-
-    script(src="https://use.fontawesome.com/0a3e84e616.js")
+    +footer(socialButtons)
