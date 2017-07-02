@@ -4,6 +4,18 @@ mixin metaBootstrap
   meta(http-equiv="X-UA-Compatible" content="IE=edge")
   meta(name="viewport" content="width=device-width, initial-scale=1")
 
+mixin metaSocial(data)
+  meta(name="twitter:card" content=data.twitter.card)
+  meta(name="twitter:site" content=data.twitter.site)
+  meta(name="twitter:creator" content=data.twitter.creator)
+  meta(name="twitter:image" content=data.og.image)
+  meta(property="og:image" content=data.og.image)
+  meta(property="og:image:height" content="525")
+  meta(property="og:image:width" content="1000")
+  meta(property="og:description" content=data.og.description)
+  meta(property="og:url" content=data.og.url)
+  meta(property="og:title" content=data.og.title)
+
 mixin css(href)
   link(href=href rel="stylesheet")
 
