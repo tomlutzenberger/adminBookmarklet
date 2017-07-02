@@ -1,5 +1,5 @@
 
-/*global global,window,require,describe,it*/
+/*global global,window,require,describe,it,beforeEach*/
 /*jslint esnext:true */
 
 const assert = require('assert');
@@ -16,6 +16,15 @@ const adminBookmarklet = script.__get__('adminBookmarklet');
 
 const ZERO = 0;
 const FIRST = 0;
+
+
+const addMetaGenerator = (name) => {
+    const meta = document.createElement('meta');
+    meta.name = 'generator';
+    meta.content = name;
+    document.getElementsByTagName('head')[FIRST].appendChild(meta);
+};
+
 
 describe('adminBookmarklet', () => {
 
@@ -38,28 +47,26 @@ describe('adminBookmarklet', () => {
 
 
     describe('#getAdminPath()', () => {
+        beforeEach(() => {
+            const meta = document.getElementsByTagName('meta');
+            [...meta].map((element) => {
+                element.parentNode.removeChild(element);
+            });
+        });
+
         it('should return a string', () => {
             assert.ok(typeof adminBookmarklet().getAdminPath() === 'string');
         });
 
-        it('should return "wp-admin" for wordpress sites', () => {
-            const meta = document.createElement('meta');
-            meta.name = 'generator';
-            meta.content = 'Wordpress';
-            document.getElementsByTagName('head')[FIRST].appendChild(meta);
-
+        it('should return "wp-admin" for Wordpress sites', () => {
+            addMetaGenerator('Wordpress');
             assert.ok(adminBookmarklet().getAdminPath() === 'wp-admin');
         });
 
         it('should return "typo3" for Typo3 sites', () => {
-            const meta = document.createElement('meta');
-            meta.name = 'generator';
-            meta.content = 'TYPO3';
-            document.getElementsByTagName('head')[FIRST].appendChild(meta);
-
+            addMetaGenerator('TYPO3');
             assert.ok(adminBookmarklet().getAdminPath() === 'typo3');
         });
     });
 
 });
-
