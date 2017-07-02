@@ -1,5 +1,7 @@
 # adminBookmarklet
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tomlutzenberger/adminBookmarklet.svg)](https://greenkeeper.io/)
+
 [![Releases](https://img.shields.io/github/release/tomlutzenberger/adminBookmarklet.svg?maxAge=2592000&style=flat-square)](https://github.com/tomlutzenberger/adminBookmarklet/releases)
 [![License](https://img.shields.io/github/license/tomlutzenberger/adminBookmarklet.svg?maxAge=2592000&style=flat-square)](https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE)
 ![David](https://img.shields.io/david/tomlutzenberger/adminBookmarklet.svg?maxAge=2592000&style=flat-square)
