@@ -1,5 +1,5 @@
 -
-  var title = 'adminBookmarklet v2.8'
+  var appName = 'adminBookmarklet v2.8'
 
   var appIcon = {
     'type' : 'stacked',
@@ -19,7 +19,7 @@
       'image': 'https://tomlutzenberger.github.io/adminBookmarklet/og-image.jpg',
       'description': 'Access your systems login with only 1 click',
       'url': 'https://tomlutzenberger.github.io/adminBookmarklet/',
-      'title': title
+      'title': appName
     }
   }
 
@@ -67,13 +67,13 @@ doctype
 html(lang="en")
   head
     +metaBootstrap
-    title= title
+    title= appName
     +css("./dist/css/adminBookmarklet.min.css")
     +metaSocial(metaSocial)
-    +metaFavicon(title, '#222222', '#ff7700')
+    +metaFavicon(appName, '#222222', '#ff7700')
   body
 
-    +navbar(title, 'center', appIcon)(class="navbar-default navbar-fixed-top")
+    +navbar(appName, 'center', appIcon)(class="navbar-default navbar-fixed-top")
 
     main.text-center
       section
