@@ -9,6 +9,20 @@
     ]
   }
 
+  var metaSocial = {
+    'twitter': {
+      'card': 'summary_large_image',
+      'site': '@t0mlutzenberger',
+      'creator': '@t0mlutzenberger'
+    },
+    'og': {
+      'image': 'https://tomlutzenberger.github.io/adminBookmarklet/og-image.jpg',
+      'description': 'Access your systems login with only 1 click',
+      'url': 'https://tomlutzenberger.github.io/adminBookmarklet/',
+      'title': title
+    }
+  }
+
   var socialButtons = [
     {
       'key': 'facebook',
@@ -53,9 +67,9 @@ doctype
 html(lang="en")
   head
     +metaBootstrap
-
     title= title
     +css("./dist/css/adminBookmarklet.min.css")
+    +metaSocial(metaSocial)
   body
 
     +navbar(title, 'center', appIcon)(class="navbar-default navbar-fixed-top")
@@ -64,7 +78,7 @@ html(lang="en")
       section
         .container
           .page-header
-            h1 Access your systems login with only 1 click.
+            h1 Access your systems login with only 1 click
           .row
             .col-xs-12.col-md-8.col-md-offset-2
               p.lead adminBookmarklet is a dynamic bookmark written in pure JavaScript to quickly access the login page of your CMS or E-Commerce system.
