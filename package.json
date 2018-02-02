@@ -19,7 +19,7 @@
     "lint": "yarn run lint:style && yarn run lint:js && yarn run lint:pug && yarn run lint:html",
     "test:unit": "mocha --colors --sort --check-leaks --use_strict -r mock-browser",
     "test": "yarn run lint && yarn run test:unit",
-    "build": "yarn run compile && yarn run test && yarn clean"
+    "build": "yarn run compile && yarn run test && yarn autoclean"
   },
   "repository": {
     "type": "git",
