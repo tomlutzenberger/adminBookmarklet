@@ -1,6 +1,18 @@
+/*!
+ * adminBookmarklet v3.0
+ * Dynamic Bookmarklet to quickly access the backend of your tool
+ *
+ * Copyright (c) 2018 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
+ * https://github.com/tomlutzenberger/adminBookmarklet
+ * https://tomlutzenberger.github.io/adminBookmarklet/
+ *
+ * @license: Licensed under the MIT license
+ * https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE
+ */
 
 /*global global,window,require,describe,it,beforeEach*/
 /*jslint esnext:true */
+
 
 const assert = require('assert');
 const rewire = require('rewire');
