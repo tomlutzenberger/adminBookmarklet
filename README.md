@@ -2,8 +2,11 @@
 
 [![Releases](https://img.shields.io/github/release/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square)](https://github.com/tomlutzenberger/adminBookmarklet/releases)
 [![License](https://img.shields.io/github/license/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square)](https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE)
-![David](https://img.shields.io/david/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square)
-![David DEV](https://img.shields.io/david/dev/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square)
+[![NSP Status](https://nodesecurity.io/orgs/tomlutzenberger/projects/e2618083-39db-49c0-821d-e9fff6c4b2ef/badge)](https://nodesecurity.io/orgs/tomlutzenberger/projects/e2618083-39db-49c0-821d-e9fff6c4b2ef/badge)
+![Dependencies](https://img.shields.io/david/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square&label=dep)
+![Dev Dependencies](https://img.shields.io/david/dev/tomlutzenberger/adminBookmarklet.svg?maxAge=86400&style=flat-square&label=devDep)
+[![Maintainability](https://api.codeclimate.com/v1/badges/84e79008c2e53ecd2f53/maintainability)](https://codeclimate.com/github/tomlutzenberger/adminBookmarklet/maintainability)
+[![Documentation](https://inch-ci.org/github/tomlutzenberger/adminBookmarklet.svg?branch=master)](https://inch-ci.org/github/tomlutzenberger/adminBookmarklet)
 ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%99%A5-red.svg?style=flat-square)
 
 ## What is adminBookmarklet?
