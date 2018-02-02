@@ -2,7 +2,7 @@
  * adminBookmarklet v3.0
  * Dynamic Bookmarklet to quickly access the backend of your tool
  *
- * Copyright (c) 2017 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
+ * Copyright (c) 2018 - Tom Lutzenberger (lutzenbergerthomas at gmail dot com)
  * https://github.com/tomlutzenberger/adminBookmarklet
  * https://tomlutzenberger.github.io/adminBookmarklet/
  *
