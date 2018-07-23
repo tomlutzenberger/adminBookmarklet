@@ -32,10 +32,10 @@
   },
   "homepage": "https://tomlutzenberger.github.io/adminBookmarklet/",
   "devDependencies": {
+    "babel-minify": "^0.3.0",
     "babel-plugin-minify-mangle-names": "^0.1.3",
     "babel-plugin-minify-simplify": "^0.1.2",
     "babel-plugin-minify-type-constructors": "^0.1.2",
-    "babel-minify": "^0.3.0",
     "cmd-wrap": "^1.0.4",
     "copyfiles": "^1.2.0",
     "eslint": "^4.1.1",
