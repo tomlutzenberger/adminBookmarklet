@@ -7,7 +7,7 @@
     "minify:compile": "babel-minify adminBookmarklet.js --out-file adminBookmarklet.min.js",
     "minify:wrap": "cat adminBookmarklet.min.js | wrap \"javascript:!(()=>{\" \"})();\" > tmpfile && cat tmpfile > adminBookmarklet.min.js && rm tmpfile",
     "minify": "yarn run minify:compile && yarn run minify:wrap",
-    "lint:js": "eslint --config .eslintrc.json src;",
+    "lint:js": "eslint --config .eslintrc.json ./adminBookmarklet.js",
     "lint:html": "htmlhint --config .htmlhintrc docs/index.html;",
     "lint": "yarn run lint:js && yarn run lint:html",
     "test:unit": "mocha --colors --sort --check-leaks --use_strict -r mock-browser",
@@ -30,19 +30,13 @@
     "babel-plugin-minify-simplify": "^0.1.2",
     "babel-plugin-minify-type-constructors": "^0.1.2",
     "cmd-wrap": "^1.0.4",
-    "copyfiles": "^1.2.0",
-    "eslint": "^4.1.1",
-    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
     "htmlhint": "^0.9.13",
-    "less-plugin-clean-css": "^1.5.1",
     "mocha": "^3.4.2",
     "mock-browser": "^0.92.14",
     "rewire": "^2.5.2",
-    "stylelint": "^7.12.0",
-    "stylelint-config-standard": "^16.0.0"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0"
   }
 }

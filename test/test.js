@@ -10,7 +10,7 @@
  * https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE
  */
 
-/*global global,window,require,describe,it,beforeEach*/
+/*global global,require,describe,it,beforeEach*/
 /*jslint esnext:true */
 
 
