@@ -1,25 +1,18 @@
 {
   "name": "adminbookmarklet",
-  "version": "3.0",
+  "version": "3.0.1",
   "description": "Dynamic Bookmarklet written in pure JavaScript to quickly access the login page of your CMS or E-Commerce system",
   "main": "adminBookmarklet.js",
   "scripts": {
     "minify:compile": "babel-minify adminBookmarklet.js --out-file adminBookmarklet.min.js",
-    "minify:wrap": "cat adminBookmarklet.min.js | wrap 'javascript:!(()=>{' '})();' > tmpfile && cat tmpfile > adminBookmarklet.min.js && rm tmpfile",
+    "minify:wrap": "cat adminBookmarklet.min.js | wrap \"javascript:!(()=>{\" \"})();\" > tmpfile && cat tmpfile > adminBookmarklet.min.js && rm tmpfile",
     "minify": "yarn run minify:compile && yarn run minify:wrap",
-    "less": "lessc --no-ie-compat --no-js --clean-css docs/less/main.less docs/dist/css/adminBookmarklet.min.css",
-    "update-fonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/dist/fonts",
-    "pug:compile": "pug docs/index.pug",
-    "pug:watch": "pug docs/index.pug --watch",
-    "compile": "yarn run minify && yarn run pug:compile && yarn run update-fonts && yarn run less",
-    "lint:style": "stylelint --config .stylelintrc docs/less/*.less;",
     "lint:js": "eslint --config .eslintrc.json src;",
-    "lint:pug": "pug-lint --config .pug-lintrc docs/**/*.pug;",
     "lint:html": "htmlhint --config .htmlhintrc docs/index.html;",
-    "lint": "yarn run lint:style && yarn run lint:js && yarn run lint:pug && yarn run lint:html",
+    "lint": "yarn run lint:js && yarn run lint:html",
     "test:unit": "mocha --colors --sort --check-leaks --use_strict -r mock-browser",
     "test": "yarn run lint && yarn run test:unit",
-    "build": "yarn run compile && yarn run test && yarn autoclean"
+    "build": "yarn run minify && yarn run test && yarn autoclean"
   },
   "repository": {
     "type": "git",
@@ -41,12 +34,9 @@
     "eslint": "^4.1.1",
     "eslint-config-standard": "^11.0.0-beta.0",
     "htmlhint": "^0.9.13",
-    "less": "^2.7.2",
     "less-plugin-clean-css": "^1.5.1",
     "mocha": "^3.4.2",
     "mock-browser": "^0.92.14",
-    "pug-cli": "^1.0.0-alpha6",
-    "pug-lint": "^2.4.0",
     "rewire": "^2.5.2",
     "stylelint": "^7.12.0",
     "stylelint-config-standard": "^16.0.0"
