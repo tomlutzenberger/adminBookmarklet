@@ -1,6 +1,6 @@
 {
   "name": "adminbookmarklet",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Dynamic Bookmarklet written in pure JavaScript to quickly access the login page of your CMS or E-Commerce system",
   "main": "adminBookmarklet.js",
   "scripts": {
