@@ -10,8 +10,8 @@
  * https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE
  */
 
-/*globals document,window*/
-/*jslint esnext:true */
+/* globals document,window */
+/* jslint esnext:true */
 
 
 /**
@@ -21,7 +21,6 @@
  * @return {Object} Public object methods
  */
 const adminBookmarklet = () => {
-
     'use strict';
 
     /**
@@ -51,51 +50,50 @@ const adminBookmarklet = () => {
         return [
             {
                 name: 'cloudrexx',
-                path: 'cadmin'
+                path: 'cadmin',
             },
             {
                 name: 'drupal',
-                path: 'user'
+                path: 'user',
             },
             {
                 name: 'jimdo',
-                path: 'login'
+                path: 'login',
             },
             {
                 name: 'joomla',
-                path: 'administrator'
+                path: 'administrator',
             },
             {
                 name: 'magento',
-                path: 'admin'
+                path: 'admin',
             },
             {
                 name: 'pimcore',
-                path: 'admin'
+                path: 'admin',
             },
             {
                 name: 'sefrengo',
-                path: 'backend'
+                path: 'backend',
             },
             {
                 name: 'typo3',
-                path: 'typo3'
+                path: 'typo3',
             },
             {
                 name: 'weebly',
-                path: 'login'
+                path: 'login',
             },
             {
                 name: 'wordpress',
-                path: 'wp-admin'
+                path: 'wp-admin',
             },
             {
                 name: 'xt-commerce',
-                path: 'login.php'
-            }
+                path: 'login.php',
+            },
         ];
     };
-
 
 
     /**
@@ -106,11 +104,10 @@ const adminBookmarklet = () => {
      */
     const parseHead = () => {
         /* Select the content of <head>, strip all whitespaces and return */
-        let head = document.getElementsByTagName('head')[FIRST].innerHTML;
+        const head = document.getElementsByTagName('head')[FIRST].innerHTML;
 
         return head.replace(/\s/g, '');
     };
-
 
 
     /**
@@ -120,12 +117,9 @@ const adminBookmarklet = () => {
      * @return {String} Admin path
      */
     const getAdminPath = () => {
-        let
-            system = [],
-            headContent = parseHead();
-
-        system = getSystems().filter((systemObj) => {
-            let pattern = new RegExp(systemObj.name, 'im');
+        const headContent = parseHead();
+        const system = getSystems().filter((systemObj) => {
+            const pattern = new RegExp(systemObj.name, 'im');
 
             return pattern.test(headContent);
         });
@@ -134,8 +128,7 @@ const adminBookmarklet = () => {
     };
 
 
-
-    return {getSystems, parseHead, getAdminPath};
+    return { getSystems, parseHead, getAdminPath };
 };
 
 
