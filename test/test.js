@@ -10,8 +10,8 @@
  * https://github.com/tomlutzenberger/adminBookmarklet/blob/master/LICENSE
  */
 
-/*global global,window,require,describe,it,beforeEach*/
-/*jslint esnext:true */
+/* global global,window,require,describe,it,beforeEach */
+/* jslint esnext:true */
 
 
 const assert = require('assert');
@@ -39,7 +39,6 @@ const addMetaGenerator = (name) => {
 
 
 describe('adminBookmarklet', () => {
-
     describe('#getSystems()', () => {
         it('should return an array', () => {
             assert.ok(Array.isArray(adminBookmarklet().getSystems()));
@@ -125,5 +124,4 @@ describe('adminBookmarklet', () => {
             assert.ok(adminBookmarklet().getAdminPath() === 'login.php');
         });
     });
-
 });
